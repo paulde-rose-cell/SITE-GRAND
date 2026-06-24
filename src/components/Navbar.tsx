@@ -44,7 +44,7 @@ export function Navbar() {
             TROIS FOIS DÉRACINÉS
           </span>
           <span className="font-sans text-[#FDFBF7]/70 text-xs tracking-widest uppercase mt-1">
-            Un roman de François Tron
+            Une saga familiale
           </span>
         </Link>
 

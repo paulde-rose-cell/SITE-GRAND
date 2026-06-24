@@ -28,13 +28,23 @@ const PILLARS = [
 
 export function FourPillars() {
   return (
-    <section className="py-24 bg-[#FDFBF7]" id="themes">
+    <section className="py-24 bg-[#FDFBF7] bg-[url('/parchemin.jpg')] bg-cover bg-center" id="themes">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl text-[#1A1A1A] mb-4">
             Une Histoire Vraie au Cœur de l'Histoire
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
+        </div>
+
+        {/* Image Plage */}
+        <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-6xl relative group">
+          <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 z-10" />
+          <img 
+            src="/photo-plage.png" 
+            alt="Paysage côtier" 
+            className="w-full h-[300px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

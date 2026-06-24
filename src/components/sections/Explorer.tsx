@@ -103,7 +103,7 @@ export function Explorer() {
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-[#FDFBF7] text-[#1A1A1A] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="max-w-4xl mx-auto bg-[#FDFBF7] bg-[url('/parchemin.jpg')] bg-cover bg-center text-[#1A1A1A] rounded-2xl overflow-hidden shadow-2xl">
           {/* Tabs Navigation */}
           <div className="flex flex-wrap border-b border-[#1A1A1A]/10 bg-white">
             {TABS.map((tab) => (
