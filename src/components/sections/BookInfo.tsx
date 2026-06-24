@@ -8,12 +8,12 @@ const EXCERPTS = [
   {
     id: 1,
     chapter: "Chapitre 1",
-    text: "Martin s’est retourné une dernière fois vers la maison familiale et ses champs qui descendent en pente douce vers la Nahe..."
+    text: "Martin s’est retourné une dernière fois vers la maison familiale et ses champs qui descendent en pente douce vers la Nahe qu’il a tant parcourus et tant travaillés selon des gestes identiques à ceux répétés sans fin par les générations précédentes. La silhouette de son père, immobile sur le seuil de la maison, est la dernière image qu’il emporte et gardera en mémoire.\n\nQuand la maison et sa terre ont disparu dernière la ligne de crête qui domine la vallée, Martin Mauer a pris conscience que sa vie avait basculé. Le temps d’avant s’est achevé. Un monde nouveau s’ouvre devant lui."
   },
   {
     id: 2,
     chapter: "Chapitre 4",
-    text: "Sur le territoire de la Stidia, à quatre lieues de Mostaganem, l’ordre est donné de dresser les tentes..."
+    text: "Sur le territoire de la Stidia, à quatre lieues de Mostaganem, l’ordre est donné de dresser les tentes à distance de l’emplacement du futur village puis celui du ramassage des chaumes destinées à confectionner les paillasses. Les cuisines sont montées. Le colonel Le Flo vérifie l’emplacement des tentes et leur alignement et, bien que la région soit pacifiée, affecte trente hommes à la garde du village conscient du risque persistant d’attaques surprises et meurtrières telles celles subies par les colons de la plaine de l’Ouarsenis en 1840 au cours de la révolte du jeune marabout, Bou Maza, khalifa de l’Emir Abd-el-Kader."
   }
 ]
 
@@ -35,9 +35,9 @@ export function BookInfo() {
               <h2 className="font-serif text-3xl md:text-4xl text-[#D4AF37]">EXTRAIT</h2>
             </div>
             
-            <div className="relative bg-white/5 border border-[#D4AF37]/20 p-8 md:p-12 rounded-xl min-h-[300px] flex flex-col justify-center">
+            <div className="relative bg-white/5 border border-[#D4AF37]/20 p-8 md:p-12 rounded-xl min-h-[450px] flex flex-col justify-center">
               <span className="absolute -top-6 left-8 text-[80px] font-serif text-[#D4AF37] opacity-20">"</span>
-              <p className="font-serif text-xl md:text-2xl italic leading-relaxed text-[#FDFBF7]/90 relative z-10">
+              <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#FDFBF7]/90 relative z-10 whitespace-pre-line">
                 {EXCERPTS[currentExcerpt].text}
               </p>
               <div className="mt-8 flex justify-between items-end relative z-10">
