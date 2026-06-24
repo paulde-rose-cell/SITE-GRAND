@@ -8,11 +8,10 @@ import { cn } from "@/lib/utils"
 const NAV_LINKS = [
   { name: "ACCUEIL", href: "/" },
   { name: "LE LIVRE", href: "#le-livre" },
-  { name: "L'AUTEUR", href: "#explorer" },
-  { name: "ŒUVRES D'ART", href: "/oeuvres" },
-  { name: "CONTEXTE HISTORIQUE", href: "#explorer" },
-  { name: "ARCHIVES", href: "#explorer" },
-  { name: "PRESSE & ÉVÉNEMENTS", href: "#explorer" },
+  { name: "L'AUTEUR", href: "#explorer", tabId: "auteur" },
+  { name: "CONTEXTE HISTORIQUE", href: "#explorer", tabId: "contexte" },
+  { name: "ARCHIVES", href: "#explorer", tabId: "archives" },
+  { name: "PRESSE & ÉVÉNEMENTS", href: "#explorer", tabId: "presse" },
   { name: "CONTACT", href: "#contact" },
 ]
 
@@ -45,7 +44,7 @@ export function Navbar() {
             TROIS FOIS DÉRACINÉS
           </span>
           <span className="font-sans text-[#FDFBF7]/70 text-xs tracking-widest uppercase mt-1">
-            Un roman de Jean-Paul Mauer
+            Un roman de François Tron
           </span>
         </Link>
 
@@ -55,6 +54,14 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
+              onClick={(e) => {
+                if (link.href === "/") {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                } else if (link.tabId) {
+                  window.dispatchEvent(new CustomEvent('changeExplorerTab', { detail: link.tabId }));
+                }
+              }}
               className="text-[#FDFBF7] text-xs font-medium tracking-widest hover:text-[#D4AF37] transition-colors"
             >
               {link.name}
@@ -85,7 +92,15 @@ export function Navbar() {
               key={link.name}
               href={link.href}
               className="text-[#FDFBF7] text-sm font-medium tracking-widest hover:text-[#D4AF37] transition-colors"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                setIsOpen(false);
+                if (link.href === "/") {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                } else if (link.tabId) {
+                  window.dispatchEvent(new CustomEvent('changeExplorerTab', { detail: link.tabId }));
+                }
+              }}
             >
               {link.name}
             </Link>

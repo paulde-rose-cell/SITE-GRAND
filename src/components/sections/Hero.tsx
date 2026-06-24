@@ -11,12 +11,11 @@ export function Hero() {
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[#1A1A1A]">
-      {/* Background Image Placeholder */}
+      {/* Background Image */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1506509653195-2aeb6014e0f0?q=80&w=2070&auto=format&fit=crop')", // Placeholder for panoramic landscape
-          filter: "grayscale(30%) sepia(20%)"
+          backgroundImage: "url('/hero-bg.png')"
         }}
       />
       

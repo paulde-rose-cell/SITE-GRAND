@@ -43,11 +43,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/oeuvres" className="text-sm text-[#FDFBF7]/80 hover:text-[#D4AF37] transition-colors">
-                  Galerie d'Art
-                </Link>
-              </li>
-              <li>
                 <Link href="#explorer" className="text-sm text-[#FDFBF7]/80 hover:text-[#D4AF37] transition-colors">
                   Contexte & Archives
                 </Link>
