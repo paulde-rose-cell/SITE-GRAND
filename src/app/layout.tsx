@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Des Prussiens en Algérie - Un roman de Jean-Paul Mauer",
-  description: "Découvrez la saga familiale de Jean-Paul Mauer, l'histoire vraie d'une famille prussienne à travers trois générations et trois exils, de l'Allemagne à l'Algérie, puis vers la France.",
+  title: "Des Prussiens en Algérie - Un roman de François Tron",
+  description: "Découvrez la saga familiale de François Tron, l'histoire vraie d'une famille prussienne à travers trois générations et trois exils, de l'Allemagne à l'Algérie, puis vers la France.",
 };
 
 export default function RootLayout({
