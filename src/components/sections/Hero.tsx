@@ -13,18 +13,19 @@ export function Hero() {
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[#1A1A1A]">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-60"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80"
         style={{
           backgroundImage: "url('/hero-bg.png')"
         }}
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/50 to-transparent" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#1A1A1A]/90 via-[#1A1A1A]/40 to-transparent" />
 
       <div className="container relative z-10 mx-auto px-4 text-center mt-20">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#FDFBF7] max-w-5xl mx-auto leading-tight mb-6">
-          Une famille. Trois générations. <span className="text-[#D4AF37] italic">Trois exils.</span>
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#FDFBF7] max-w-5xl mx-auto leading-tight mb-6 flex flex-col gap-2">
+          <span>Des Prussiens en Algérie</span>
+          <span className="text-[#D4AF37] italic mt-2 md:mt-4">Une destinée Française</span>
         </h1>
         
         <p className="font-sans text-lg md:text-xl text-[#FDFBF7]/90 max-w-3xl mx-auto leading-relaxed mb-10">

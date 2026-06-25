@@ -74,7 +74,7 @@ export function Footer() {
         <div className="pt-8 border-t border-[#FDFBF7]/10 flex flex-col md:flex-row justify-between items-center text-xs text-[#FDFBF7]/50">
           <p>© {new Date().getFullYear()} Jean-Paul Mauer. Tous droits réservés.</p>
           <p className="mt-2 md:mt-0">
-            Créé pour la publication de "Trois Fois Déracinés"
+            Créé pour la publication de "Des Prussiens en Algérie"
           </p>
         </div>
       </div>

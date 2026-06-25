@@ -13,7 +13,7 @@ const TABS = [
 const CONTENT = {
   auteur: (
     <div className="space-y-4">
-      <h3 className="font-serif text-2xl text-[#D4AF37] mb-4">À propos de François Tron</h3>
+      <h3 className="font-serif text-3xl font-bold text-[#1A1A1A] mb-4">À propos de François Tron</h3>
       <p className="leading-relaxed">
         Tout est parti de l’histoire d’un homme qui m’est proche, mon beau-père. Homme solitaire, sobre et silencieux, il était particulièrement peu disert sur son histoire familiale et son engagement pendant la seconde guerre mondiale. Je savais qu’il était d’origine pied-noir et allemande. Je savais aussi qu’il avait été torturé et déporté pour son appartenance à un réseau de lutte contre l’occupant nazi, le réseau Kléber. Sa propre famille notamment ses enfants n’en savait pas plus ou en parlait peu.
       </p>
@@ -36,7 +36,7 @@ const CONTENT = {
   ),
   contexte: (
     <div className="space-y-4">
-      <h3 className="font-serif text-2xl text-[#D4AF37] mb-4">La Grande Migration et la Colonisation</h3>
+      <h3 className="font-serif text-3xl font-bold text-[#1A1A1A] mb-4">La Grande Migration et la Colonisation</h3>
       <p className="leading-relaxed">
         Deux grands thèmes sont abordés à travers l’aventure de ces migrants prussiens. Le premier est l’émigration européenne du milieu du XIXème siècle, toujours incertaine et dangereuse, remplie d’aléas qui modifient ou broient les destinées. L’Allemagne et l’Irlande connaissent des départs massifs vers les Etats-Unis, le Brésil, l’Australie. Aucun état allemand n’échappe à ce vaste mouvement de populations. L’aventure des familles prussiennes décrite dans ce livre en est un exemple frappant et douloureux.
       </p>
@@ -50,7 +50,7 @@ const CONTENT = {
   ),
   archives: (
     <div className="space-y-4">
-      <h3 className="font-serif text-2xl text-[#D4AF37] mb-4">Documents Historiques</h3>
+      <h3 className="font-serif text-3xl font-bold text-[#1A1A1A] mb-4">Documents Historiques</h3>
       <div className="bg-[#1A1A1A]/5 rounded-lg border border-[#1A1A1A]/10 p-4">
         {/* Placeholder for archive image */}
         <div 
@@ -65,13 +65,10 @@ const CONTENT = {
   ),
   presse: (
     <div className="space-y-4">
-      <h3 className="font-serif text-2xl text-[#D4AF37] mb-4">Actualités et Parutions</h3>
-      <div className="bg-white p-6 rounded-lg border-l-4 border-[#D4AF37] shadow-sm">
-        <span className="text-xs text-[#1A1A1A]/50 uppercase tracking-wider block mb-2">À venir</span>
-        <h4 className="font-serif text-lg text-[#1A1A1A]">Lancement Officiel de "Trois Fois Déracinés"</h4>
-        <p className="text-[#1A1A1A]/70 text-sm mt-2">
-          Plus d'informations seront communiquées prochainement concernant les dates de dédicaces et la sortie en librairie.
-        </p>
+      <h3 className="font-serif text-3xl font-bold text-[#1A1A1A] mb-4">Actualités et Parutions</h3>
+      <div className="bg-[#FDFBF7] p-8 md:p-12 border-l-4 border-[#D4AF37]">
+        <h4 className="font-serif text-lg text-[#1A1A1A]">Lancement Officiel de "Des Prussiens en Algérie"</h4>
+        <p className="text-sm text-[#1A1A1A]/70 mt-2 italic">Date à venir — Plus d'informations prochainement</p>
       </div>
     </div>
   )

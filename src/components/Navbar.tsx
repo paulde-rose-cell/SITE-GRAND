@@ -39,12 +39,9 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo / Title */}
-        <Link href="/" className="flex flex-col group">
-          <span className="font-serif text-[#D4AF37] text-xl md:text-2xl tracking-wide group-hover:text-white transition-colors">
-            TROIS FOIS DÉRACINÉS
-          </span>
-          <span className="font-sans text-[#FDFBF7]/70 text-xs tracking-widest uppercase mt-1">
-            Une saga familiale
+        <Link href="/" className="group">
+          <span className="font-serif text-[#D4AF37] text-xl md:text-2xl tracking-wide group-hover:text-white transition-colors uppercase">
+            François Tron
           </span>
         </Link>
 
