@@ -94,7 +94,7 @@ export function BookInfo() {
                 </div>
                 <div className="border-l-2 border-[#D4AF37]/30 pl-4">
                   <span className="block text-[#FDFBF7]/50 uppercase tracking-wider text-xs mb-1">Date de parution</span>
-                  <span className="text-[#D4AF37] font-semibold">À venir</span>
+                  <span className="text-[#D4AF37] font-semibold">Disponible</span>
                 </div>
               </div>
             </div>
@@ -124,14 +124,16 @@ export function BookInfo() {
                   Fnac
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
                 </a>
-                <Button variant="outline" className="flex-1 justify-between group">
+                <a
+                  href="https://www.decitre.fr/livres/des-prussiens-en-algerie-une-destinee-francaise-9782386513930.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 flex-1 justify-between group"
+                >
                   Decitre
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
-                </Button>
+                </a>
               </div>
-              <p className="text-center text-xs text-[#FDFBF7]/40 mt-4 italic">
-                Les liens seront actifs à la date de parution.
-              </p>
             </div>
           </div>
 

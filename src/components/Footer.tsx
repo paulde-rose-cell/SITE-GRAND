@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-serif text-[#D4AF37] text-2xl">Restez informé</h3>
             <p className="text-sm text-[#FDFBF7]/80 leading-relaxed">
-              Inscrivez-vous à notre newsletter pour être alerté du lancement du livre et des événements à venir.
+              Inscrivez-vous à notre newsletter pour être alerté de nos actualités et des événements à venir autour du livre.
             </p>
             <form className="flex mt-4" onSubmit={(e) => e.preventDefault()}>
               <input

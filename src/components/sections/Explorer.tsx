@@ -67,8 +67,8 @@ const CONTENT = {
     <div className="space-y-4">
       <h3 className="font-serif text-3xl font-bold text-[#1A1A1A] mb-4">Actualités et Parutions</h3>
       <div className="bg-[#FDFBF7] p-8 md:p-12 border-l-4 border-[#D4AF37]">
-        <h4 className="font-serif text-lg text-[#1A1A1A]">Lancement Officiel de "Des Prussiens en Algérie"</h4>
-        <p className="text-sm text-[#1A1A1A]/70 mt-2 italic">Date à venir — Plus d'informations prochainement</p>
+        <h4 className="font-serif text-lg text-[#1A1A1A]">"Des Prussiens en Algérie" est maintenant disponible</h4>
+        <p className="text-sm text-[#1A1A1A]/70 mt-2 italic">Retrouvez le livre sur Amazon, Fnac et Decitre.</p>
       </div>
     </div>
   )
