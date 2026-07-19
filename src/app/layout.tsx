@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Des Prussiens en Algérie - Un roman de François Tron",
+  title: "La Stidia - Des Prussiens en Algérie | François Tron",
   description: "Découvrez la saga familiale de François Tron, l'histoire vraie d'une famille prussienne à travers trois générations et trois exils, de l'Allemagne à l'Algérie, puis vers la France.",
   icons: {
     icon: "/logo_site.png",
