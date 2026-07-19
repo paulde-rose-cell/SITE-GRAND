@@ -17,7 +17,7 @@ const PILLARS = [
   {
     title: "L’ENRACINEMENT",
     icon: Wheat,
-    description: "Ces nouveaux colons luttent sur une terre rude et hostile qu’ils travaillent avec acharnement pour développer successivement la culture céréalière puis la vigne.",
+    description: "Ces nouveaux colons luttent sur une terre rude et hostile qu’ils travaillent avec acharnement pour développer successivement la culture céréalière et la vigne.",
   },
   {
     title: "L’ENGAGEMENT",
@@ -32,7 +32,7 @@ export function FourPillars() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl text-[#1A1A1A] mb-4">
-            Une Histoire Vraie au Cœur de l'Histoire
+            Une histoire vraie au cœur de l'Histoire
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
         </div>
