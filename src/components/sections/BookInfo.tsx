@@ -94,7 +94,7 @@ export function BookInfo() {
                 </div>
                 <div className="border-l-2 border-[#D4AF37]/30 pl-4">
                   <span className="block text-[#FDFBF7]/50 uppercase tracking-wider text-xs mb-1">Date de parution</span>
-                  <span className="text-[#D4AF37] font-semibold">Disponible</span>
+                  <span className="text-[#D4AF37] font-semibold">Début juillet</span>
                 </div>
               </div>
             </div>
