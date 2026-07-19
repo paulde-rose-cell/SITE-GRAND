@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -40,15 +39,10 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo / Title */}
-        <Link href="/" className="group flex items-center">
-          <Image 
-            src="/logo_site.png" 
-            alt="Logo du site" 
-            width={240} 
-            height={80} 
-            className="h-10 w-auto md:h-14 object-contain transition-transform group-hover:scale-105" 
-            priority
-          />
+        <Link href="/" className="group">
+          <span className="font-serif text-[#D4AF37] text-xl md:text-2xl tracking-wide group-hover:text-white transition-colors uppercase">
+            François Tron
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
