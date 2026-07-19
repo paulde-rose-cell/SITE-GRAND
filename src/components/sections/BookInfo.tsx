@@ -27,14 +27,14 @@ export function BookInfo() {
     <section className="py-24 bg-[#1A1A1A] text-[#FDFBF7]" id="le-livre">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
-          
+
           {/* Left Column: Excerpts */}
           <div className="w-full lg:w-1/2 space-y-8">
             <div className="flex items-center space-x-4 mb-8">
               <BookOpen className="text-[#D4AF37] w-8 h-8" />
               <h2 className="font-serif text-3xl md:text-4xl text-[#D4AF37]">EXTRAIT</h2>
             </div>
-            
+
             <div className="relative bg-white/5 border border-[#D4AF37]/20 p-8 md:p-12 rounded-xl min-h-[450px] flex flex-col justify-center">
               <span className="absolute -top-6 left-8 text-[80px] font-serif text-[#D4AF37] opacity-20">"</span>
               <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#FDFBF7]/90 relative z-10 whitespace-pre-line">
@@ -44,16 +44,16 @@ export function BookInfo() {
                 <span className="text-[#D4AF37] font-medium tracking-widest text-sm uppercase">
                   — {EXCERPTS[currentExcerpt].chapter}
                 </span>
-                
+
                 <div className="flex space-x-2">
-                  <button 
+                  <button
                     onClick={prevExcerpt}
                     className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-all"
                     aria-label="Extrait précédent"
                   >
                     <ChevronLeft size={20} />
                   </button>
-                  <button 
+                  <button
                     onClick={nextExcerpt}
                     className="w-10 h-10 rounded-full border border-[#D4AF37]/30 flex items-center justify-center hover:bg-[#D4AF37] hover:text-[#1A1A1A] transition-all"
                     aria-label="Extrait suivant"
@@ -70,7 +70,7 @@ export function BookInfo() {
             <div>
               <h2 className="font-serif text-3xl md:text-5xl mb-6">LE LIVRE</h2>
               <div className="w-16 h-1 bg-[#D4AF37] rounded-full mb-8"></div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-4 text-sm md:text-base">
                 <div className="border-l-2 border-[#D4AF37]/30 pl-4">
                   <span className="block text-[#FDFBF7]/50 uppercase tracking-wider text-xs mb-1">Genre</span>
@@ -90,7 +90,7 @@ export function BookInfo() {
                 </div>
                 <div className="border-l-2 border-[#D4AF37]/30 pl-4">
                   <span className="block text-[#FDFBF7]/50 uppercase tracking-wider text-xs mb-1">Nombre de pages</span>
-                  <span className="font-medium">250</span>
+                  <span className="font-medium">266</span>
                 </div>
                 <div className="border-l-2 border-[#D4AF37]/30 pl-4">
                   <span className="block text-[#FDFBF7]/50 uppercase tracking-wider text-xs mb-1">Date de parution</span>
@@ -104,16 +104,26 @@ export function BookInfo() {
                 <ShoppingCart className="mr-3 text-[#D4AF37]" size={24} />
                 ACHETER LE LIVRE
               </h3>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="outline" className="flex-1 justify-between group">
+                <a
+                  href="https://www.amazon.fr/Prussiens-Alg%C3%A9rie-une-destin%C3%A9e-fran%C3%A7aise/dp/2386513939?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.pDzdhAzMxI6-hkJMRyXUZw.8ypGvLZp4Mb_B9dqT_0ee8zhvniJ1TJM9QlOoT0Yrvs&dib_tag=se&keywords=prussiens+en+algerie&qid=1784470562&sr=8-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 flex-1 justify-between group"
+                >
                   Amazon
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
-                </Button>
-                <Button variant="outline" className="flex-1 justify-between group">
+                </a>
+                <a
+                  href="https://www.fnac.com/a23334154/Francois-Tron-Des-Prussiens-en-Algerie-une-destinee-francaise"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 flex-1 justify-between group"
+                >
                   Fnac
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
-                </Button>
+                </a>
                 <Button variant="outline" className="flex-1 justify-between group">
                   Decitre
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
@@ -124,7 +134,7 @@ export function BookInfo() {
               </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
