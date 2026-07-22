@@ -3,6 +3,7 @@
 import React, { useState } from "react"
 import { Button } from "@/components/ui/Button"
 import { ShoppingCart, ExternalLink, ChevronLeft, ChevronRight, BookOpen } from "lucide-react"
+import { motion } from "framer-motion"
 
 const EXCERPTS = [
   {
@@ -29,7 +30,13 @@ export function BookInfo() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
 
           {/* Left Column: Excerpts */}
-          <div className="w-full lg:w-1/2 space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
+            className="w-full lg:w-1/2 space-y-8"
+          >
             <div className="flex items-center space-x-4 mb-8">
               <BookOpen className="text-[#D4AF37] w-8 h-8" />
               <h2 className="font-serif text-3xl md:text-4xl text-[#D4AF37]">EXTRAIT</h2>
@@ -63,10 +70,16 @@ export function BookInfo() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Book Specs & Buy Buttons */}
-          <div className="w-full lg:w-1/2 space-y-10 lg:pl-10">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
+            className="w-full lg:w-1/2 space-y-10 lg:pl-10"
+          >
             <div>
               <h2 className="font-serif text-3xl md:text-5xl mb-6">LE LIVRE</h2>
               <div className="w-16 h-1 bg-[#D4AF37] rounded-full mb-8"></div>
@@ -144,7 +157,7 @@ export function BookInfo() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

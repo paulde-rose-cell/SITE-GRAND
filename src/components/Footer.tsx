@@ -3,6 +3,7 @@
 import React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/Button"
+import { motion } from "framer-motion"
 
 export function Footer() {
   return (
@@ -10,7 +11,13 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Column 1: Newsletter */}
-          <div className="space-y-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0 }}
+            className="space-y-4"
+          >
             <h3 className="font-serif text-[#D4AF37] text-2xl">Restez informé</h3>
             <p className="text-sm text-[#FDFBF7]/80 leading-relaxed">
               Inscrivez-vous à notre newsletter pour être alerté de nos actualités et des événements à venir autour du livre.
@@ -26,10 +33,16 @@ export function Footer() {
                 S'inscrire
               </Button>
             </form>
-          </div>
+          </motion.div>
 
           {/* Column 2: Navigation */}
-          <div className="space-y-4 md:ml-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="space-y-4 md:ml-12"
+          >
             <h3 className="font-serif text-[#D4AF37] text-xl">Navigation</h3>
             <ul className="space-y-2">
               <li>
@@ -48,10 +61,16 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Column 3: Legal & Credits */}
-          <div className="space-y-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-4"
+          >
             <h3 className="font-serif text-[#D4AF37] text-xl">Légal & Contact</h3>
             <ul className="space-y-2">
               <li>
@@ -68,7 +87,7 @@ export function Footer() {
                 contact@trois-fois-deracines.fr
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
 
         <div className="pt-8 border-t border-[#FDFBF7]/10 flex flex-col md:flex-row justify-between items-center text-xs text-[#FDFBF7]/50">

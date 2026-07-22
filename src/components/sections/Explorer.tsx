@@ -118,14 +118,26 @@ export function Explorer() {
     <section className="py-24 bg-[#1A1A1A] text-[#FDFBF7]" id="explorer">
       <div className="container mx-auto px-4 md:px-6">
         
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center mb-16"
+        >
           <h2 className="font-serif text-3xl md:text-5xl text-[#FDFBF7] mb-4">
             Explorer l'Univers du Livre
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
-        </div>
+        </motion.div>
 
-        <div className="max-w-4xl mx-auto bg-[#FDFBF7] bg-[url('/parchemin.jpg')] bg-cover bg-center text-[#1A1A1A] rounded-2xl overflow-hidden shadow-2xl">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.98, y: 40 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: false, margin: "-100px" }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-4xl mx-auto bg-[#FDFBF7] bg-[url('/parchemin.jpg')] bg-cover bg-center text-[#1A1A1A] rounded-2xl overflow-hidden shadow-2xl"
+        >
           {/* Tabs Navigation */}
           <div className="flex flex-wrap border-b border-[#1A1A1A]/10 bg-white">
             {TABS.map((tab) => (
@@ -154,16 +166,16 @@ export function Explorer() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.2 }}
+                initial={{ opacity: 0, y: 15, filter: "blur(4px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: -15, filter: "blur(4px)" }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
               >
                 {CONTENT[activeTab as keyof typeof CONTENT]}
               </motion.div>
             </AnimatePresence>
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

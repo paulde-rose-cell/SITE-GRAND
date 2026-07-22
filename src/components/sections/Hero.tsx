@@ -3,6 +3,7 @@
 import React from "react"
 import { Button } from "@/components/ui/Button"
 import { ChevronDown } from "lucide-react"
+import { motion } from "framer-motion"
 
 export function Hero() {
   const scrollToBook = () => {
@@ -12,8 +13,11 @@ export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[#1A1A1A]">
       {/* Background Image */}
-      <div
+      <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-80"
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.1 }}
+        transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
         style={{
           backgroundImage: "url('/hero-bg.png')"
         }}
@@ -22,7 +26,12 @@ export function Hero() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#1A1A1A]/90 via-[#1A1A1A]/40 to-transparent" />
 
-      <div className="container relative z-10 mx-auto px-4 text-center mt-20">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="container relative z-10 mx-auto px-4 text-center mt-20"
+      >
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#FDFBF7] max-w-5xl mx-auto leading-tight mb-6 flex flex-col gap-2">
           <span>Des Prussiens en Algérie</span>
           <span className="text-[#D4AF37] italic mt-2 md:mt-4">Une destinée Française</span>
@@ -39,7 +48,7 @@ export function Hero() {
         >
           DÉCOUVRIR LE LIVRE
         </Button>
-      </div>
+      </motion.div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
         <button onClick={scrollToBook} className="text-[#D4AF37] opacity-80 hover:opacity-100 transition-opacity" aria-label="Scroll down">
