@@ -105,12 +105,21 @@ export function BookInfo() {
                 ACHETER LE LIVRE
               </h3>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="https://www.editions-spinelle.com/index.php/litterature/litterature-generale/romans/es-des-prussiens-en-algerie-une-destinee-francaise"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 justify-between group"
+                >
+                  Éditions Spinelle
+                  <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
+                </a>
                 <a
                   href="https://www.amazon.fr/Prussiens-Alg%C3%A9rie-une-destin%C3%A9e-fran%C3%A7aise/dp/2386513939?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.pDzdhAzMxI6-hkJMRyXUZw.8ypGvLZp4Mb_B9dqT_0ee8zhvniJ1TJM9QlOoT0Yrvs&dib_tag=se&keywords=prussiens+en+algerie&qid=1784470562&sr=8-1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 flex-1 justify-between group"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 justify-between group"
                 >
                   Amazon
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
@@ -119,7 +128,7 @@ export function BookInfo() {
                   href="https://www.fnac.com/a23334154/Francois-Tron-Des-Prussiens-en-Algerie-une-destinee-francaise"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 flex-1 justify-between group"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 justify-between group"
                 >
                   Fnac
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />
@@ -128,7 +137,7 @@ export function BookInfo() {
                   href="https://www.decitre.fr/livres/des-prussiens-en-algerie-une-destinee-francaise-9782386513930.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 flex-1 justify-between group"
+                  className="inline-flex items-center whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-[#1A1A1A] h-10 px-4 py-2 justify-between group"
                 >
                   Decitre
                   <ExternalLink size={16} className="text-[#D4AF37] group-hover:text-[#1A1A1A]" />

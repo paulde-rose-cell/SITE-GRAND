@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { name: "CONTEXTE HISTORIQUE", href: "#explorer", tabId: "contexte" },
   { name: "ARCHIVES", href: "#explorer", tabId: "archives" },
   { name: "PRESSE & ÉVÉNEMENTS", href: "#explorer", tabId: "presse" },
+  { name: "INFOS AUTEUR", href: "/auteur" },
   { name: "CONTACT", href: "#contact" },
 ]
 

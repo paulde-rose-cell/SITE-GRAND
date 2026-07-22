@@ -41,9 +41,9 @@ export function FourPillars() {
         <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl mx-auto max-w-6xl relative group">
           <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 z-10" />
           <img 
-            src="/photo-plage.png" 
+            src="/imagelivre.png" 
             alt="Paysage côtier" 
-            className="w-full h-[300px] md:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
           />
         </div>
 
