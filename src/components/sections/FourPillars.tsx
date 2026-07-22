@@ -60,24 +60,14 @@ export function FourPillars() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {PILLARS.map((pillar, index) => (
-            <motion.div
-              key={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.1 }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1 }
-              }}
-              className="h-full"
+            <motion.div 
+              key={index} 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: false, margin: "-10px" }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.15 }}
+              className="bg-white p-8 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#1A1A1A]/5 hover:shadow-[0_8px_30px_rgb(212,175,55,0.15)] transition-all duration-300 group flex flex-col h-full"
             >
-              <motion.div 
-                variants={{
-                  hidden: { opacity: 0, y: 40 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: index * 0.15 } }
-                }}
-                className="bg-white p-8 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#1A1A1A]/5 hover:shadow-[0_8px_30px_rgb(212,175,55,0.15)] transition-all duration-300 group flex flex-col h-full"
-              >
               <div className="mb-4 flex items-center gap-4">
                 <span className="font-serif text-5xl text-[#D4AF37]/50 font-bold group-hover:text-[#D4AF37] transition-colors duration-500 italic">
                   {pillar.numeral}.
@@ -89,7 +79,6 @@ export function FourPillars() {
               <p className="text-[#1A1A1A]/70 leading-relaxed font-sans flex-grow">
                 {pillar.description}
               </p>
-              </motion.div>
             </motion.div>
           ))}
         </div>
