@@ -1,27 +1,24 @@
 "use client"
 
-import React from "react"
-import { Compass, Ship, Wheat, Shield } from "lucide-react"
-
 const PILLARS = [
   {
     title: "L’EXIL",
-    icon: Compass,
+    numeral: "I",
     description: "Au milieu du XIXème siècle, des paysans de la Prusse rhénane fuient la misère et leur pays pour le Brésil.",
   },
   {
     title: "L’ERRANCE",
-    icon: Ship,
+    numeral: "II",
     description: "Trompés par des passeurs, ils errent dans les grands ports de la mer du Nord avant d’être transportés en Algérie.",
   },
   {
     title: "L’ENRACINEMENT",
-    icon: Wheat,
+    numeral: "III",
     description: "Ces nouveaux colons luttent sur une terre rude et hostile qu’ils travaillent avec acharnement pour développer successivement la culture céréalière et la vigne.",
   },
   {
     title: "L’ENGAGEMENT",
-    icon: Shield,
+    numeral: "IV",
     description: "Prussiens devenus Français, certains combattront sans relâche l’Allemagne nazie.",
   },
 ]
@@ -53,8 +50,10 @@ export function FourPillars() {
               key={index} 
               className="bg-white p-8 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#1A1A1A]/5 hover:shadow-[0_8px_30px_rgb(212,175,55,0.15)] transition-all duration-300 group flex flex-col h-full"
             >
-              <div className="w-16 h-16 rounded-full bg-[#1A1A1A] flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] transition-colors duration-300">
-                <pillar.icon className="w-8 h-8 text-[#D4AF37] group-hover:text-[#1A1A1A] transition-colors" />
+              <div className="mb-4 flex items-center gap-4">
+                <span className="font-serif text-5xl text-[#D4AF37]/50 font-bold group-hover:text-[#D4AF37] transition-colors duration-500 italic">
+                  {pillar.numeral}.
+                </span>
               </div>
               <h3 className="font-serif text-xl font-bold text-[#1A1A1A] tracking-wider mb-4">
                 {pillar.title}
